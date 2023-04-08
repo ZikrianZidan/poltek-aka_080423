@@ -20,4 +20,12 @@ if st.button('Hitung'):
              st.write(f'hasil kali antara {number1} dan {number2} adalah {hasil}')
 else:
              st.write('silahkan klik tombol hitung')
-  
+
+import numpy as np
+array1 = np.random.randint(10,40, size=(10,))
+array2 = np.random.randint(10,40, size=(10,))
+
+import pandas as pd
+st.dataframe(pd.DataFrame({'kelas A' : array1,
+                           'kelas B' : array2
+                          }))
